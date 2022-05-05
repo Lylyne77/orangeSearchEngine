@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
     <title>Orange Search Engine</title>
 </head>
+
+<!-- To write a comment without remembering the tag you press "command" and "k" and "c" -->
+
 <body>
 
     <header>
         <img src="./Img/logo.png" alt="Orange Search Engine Logo">
         <nav>
-            <ul>
+            <ul class="nav-container">
                 <a href="#">Benefit</a>
                 <a href="#">Pricing</a>
                 <a href="#">Testimonials</a>
@@ -20,40 +30,71 @@
     </header>
 
     <main>
-        <img src="./Img/iPhoneMockupHeader_Phone_.png" alt="Image of iPhone Mockup">
+        <img
+            src="./Img/iPhoneMockupHeader_Phone_.png"
+            alt="Image of iPhone Mockup"
+            class="iPhone"
+        />
+        
         <section>
-            <input type="search" placeholder="Search the web">
-            <img src="./Img/serch_icon.png" alt="Search icon">
+            <div>
+            <input type="search" placeholder="Search the web" id="search_field">
+            <img
+                src="./Img/serch_icon.png"
+                alt="Search icon"
+                id="magnifier"
+            >
+            </div>
+
             <div>
                 <h1>Tired of your date being squeezed? Here to help!</h1>
-                <p>Get the online privacy protection you deserve for free with one download in the App Store:</p>
-                <div>
-                    <div>
-                        <img src="./Img/checkBox_phone.svg" alt="Check Box Icon Phone">
-                        <h3>Private Search</h3>
-                    </div>
-                    <div>
-                        <img src="./Img/checkBox_phone.svg" alt="Check Box Icon Phone">
-                        <h3>Tracker Blocking</h3>
-                    </div><div>
-                        <img src="./Img/checkBox_phone.svg" alt="Check Box Icon Phone">
-                        <h3>Site Encryption</h3>
+                <p class="bodyText">Get the online privacy protection you deserve for free with one download in the App Store:</p>
+                
+                <div class="feature-box">
+                    <div class="feature-container">
+                        <div class="feature-child">
+                            <img
+                                src="./Img/checkBox_phone.svg"
+                                alt="Check Box Icon Phone"
+                            />
+                            <h3 class="features">Private Search</h3>
+                        </div>
+                        <div class="feature-child">
+                            <img
+                            src="./Img/checkBox_phone.svg"
+                            alt="Check Box Icon Phone"
+                            />
+                            <h3 class="features">Tracker Blocking</h3>
+                        </div>
+                        <div class="feature-child">
+                            <img
+                                src="./Img/checkBox_phone.svg"
+                                alt="Check Box Icon Phone"
+                            />
+                            <h3 class="features">Site Encryption</h3>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <button>Download now</button>
+            <div class="ratingAndButton">
 
-            <div>
+             <button>Download now</button>
+
+                <div id="rating-container">
                 <img src="./Img/ratingDark.png" alt="Rated 4 of 5">
                 <img src="./Img/ratingDark.png" alt="Rated 4 of 5">
                 <img src="./Img/ratingDark.png" alt="Rated 4 of 5">
                 <img src="./Img/ratingDark.png" alt="Rated 4 of 5">
                 <img src="./Img/ratingLight.png" alt="Rated 4 of 5">
                 <span>Rated 4/5</span>
+                </div>
+
             </div>
+
         </section>
     </main>
+    
     <footer>
         <p>Privacy for everyone</p>
     </footer>
